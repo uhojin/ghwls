@@ -38,7 +38,7 @@ function convertAdmonitions(body) {
 				.split('\n')
 				.map((l) => `> ${l}`.trimEnd())
 				.join('\n');
-			return `${heading}${quoted}`;
+			return `${heading}${quoted}\n`;
 		}
 	);
 }

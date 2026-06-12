@@ -5,6 +5,8 @@ date: "2026-02-10"
 tags: [macOS, Swift, SMCKit]
 ---
 
+> **Work in progress** — this post is unfinished.
+
 > Cover image source: [Mercury (Hermes). Wood engraving by Jonnard after W.B. Richmond, 1866.](https://commons.wikimedia.org/wiki/File:Mercury_(Hermes)._Wood_engraving_by_Jonnard_after_W.B._Richm_Wellcome_V0035817.jpg)
 
 # A Trillion Dollar Company, BTW...
@@ -13,7 +15,7 @@ Since Apple doesn't provide an easy way to keep an eye on your hardware's health
 # Existing Solutions
 Naturally us humans can't agree on a single thing, someone wants this, or that, or just something entirely new. It applies on many levels. Feature scope is one thing, but paywalling is just a sin. Especially in this day and age of "Vibe-Coding", at least in my point-of-view.
 
-I was using free version of coconutBattery for the longest time, since version 3 on my now [retired media server](/posts/prometheus_notes/post/). I've been using version 4 on my M1 laptop to monitor my battery temperature without any issues... until recently.
+I was using free version of coconutBattery for the longest time, since version 3 on my now [retired media server](/writing/prometheus-notes). I've been using version 4 on my M1 laptop to monitor my battery temperature without any issues... until recently.
 
 ## Numbers don't lie... Until they do
 I monitor my battery temperature because it's what I grew accustomed to with coconutBattery, and I've found it to be a 'good enough' metric for general status of my machine, especially in a laptop context. I can also get a general baseline of 

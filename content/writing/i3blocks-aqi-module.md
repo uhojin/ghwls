@@ -8,6 +8,7 @@ tags: [i3blocks, curl, sed, awk]
 > ***Hello!***
 >
 > *This is post is old and possibly outdated. I'm keeping it here for reference. (2024/09/01)*
+
 # Overview
 Making API requests then displaying response on [i3bar](https://i3wm.org/i3bar/).
 Using [cURL](https://curl.se/),[sed](https://linux.die.net/man/1/sed), and [AWK](https://linux.die.net/man/1/awk) to retrieve & manipulate the response data.
@@ -22,7 +23,7 @@ It's called a "module" but under the hood, they're simply a group of commands to
 There are existing modules out there to show weather reports, and I knew where to get the AQI from, so all I had to do was simply put the two together.
 
 ## Preparation
-First I needed to grab the air quality data from somewhere, then I came across this [website](aqicn.org). By default, it shows your location, local air quality forecast, and explains what the numbers mean.
+First I needed to grab the air quality data from somewhere, then I came across this [website](https://aqicn.org). By default, it shows your location, local air quality forecast, and explains what the numbers mean.
 
 Further down the page, there's a [link](https://aqicn.org/api) to their API, which returns more information than I needed, so I still needed to put in some effor to make the information usable for the status bar.
 
@@ -70,7 +71,7 @@ which returns following format:
 }
 ```
 
-Pretty standard JSON response. Using `here` returns the local air quality, the website also contains a [list of all available cities](aqicn.org/city/all).
+Pretty standard JSON response. Using `here` returns the local air quality, the website also contains a [list of all available cities](https://aqicn.org/city/all).
 
 ## Now What?
 I saved the response to a file, which was done with pipes and redirection.

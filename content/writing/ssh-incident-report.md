@@ -12,6 +12,7 @@ tags: [SSH, Networking, Security]
 > - First IP Address 216.107.162.242, more logged from different locations
 > - Implemented Fail2Ban, Public Key-based Authentication
 > - Resumed Normal Operation 25/01/03
+
 # House Keeping
 I was spending time with my friends with the new years right around the corner. Just minding my own business, feeling pretty good about my server's uptime.
 ![Server uptime](/images/writing/ssh-incident-report/uptime.png)

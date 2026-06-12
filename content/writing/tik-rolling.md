@@ -8,6 +8,7 @@ tags: [Rickrolling, MikroTik, scripting]
 > **Date Advisory**
 >
 > This was back in the summer of 2018
+
 # Background
 I used to work for a local ISP, during my time there I was fortunate enough to gain some experience with hardware, while working a helpdesk job.
 

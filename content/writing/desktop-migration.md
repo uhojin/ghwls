@@ -33,6 +33,7 @@ docker uses `/var` which requires more maintenance if on a separate partition.
 > `passwd` to create live account passwword for SSH access to install from remote.
 >
 > **.tmux.conf**: `<bind> + : resize-pane -R 20` for pane resizing
+
 ### Mirrorlist
 ```shell frame=none
 reflector --verbose --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
@@ -119,6 +120,7 @@ systemctl enable sshd
 > **Knowledge +1**
 >
 > When dealing with systemd services with `systemctl`, `enable` means it will start on boot, while `start` doesn't necessarily mean it will start on next boot.
+
 # Setup & Personalization
 After networking was persistent, I created a user account for daily use, then added it to `/etc/sudoers`, then I went to get a different shell, because pretty colours.
 
