@@ -7,7 +7,10 @@ const config = {
 	extensions: ['.svelte', '.md'],
 	preprocess: [vitePreprocess(), mdsvex({ extensions: ['.md'] })],
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		prerender: {
+			handleHttpError: 'warn'
+		}
 	}
 };
 

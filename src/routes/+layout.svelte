@@ -1,11 +1,38 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.svg';
+	import '@fontsource-variable/inter';
+	import '@fontsource-variable/jetbrains-mono';
+	import '../app.css';
+	import { onNavigate } from '$app/navigation';
+	import Nav from '$lib/components/Nav.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
-	let { children } = $props();
+	let { children, data } = $props();
+
+	onNavigate((navigation) => {
+		if (!document.startViewTransition) return;
+		return new Promise((resolve) => {
+			document.startViewTransition(async () => {
+				resolve();
+				await navigation.complete;
+			});
+		});
+	});
 </script>
 
-<svelte:head>
-	<link rel="icon" href={favicon} />
-</svelte:head>
+<div class="shell">
+	<Nav />
+	<main>{@render children()}</main>
+	<Footer buildInfo={data.buildInfo} />
+</div>
 
-{@render children()}
+<style>
+	.shell {
+		max-width: 44rem;
+		margin: 0 auto;
+		padding: 0 1.25rem;
+		display: flex;
+		flex-direction: column;
+		min-height: 100dvh;
+	}
+	main { flex: 1; }
+</style>
