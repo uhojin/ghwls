@@ -1,0 +1,109 @@
+/* ---- tokens ---- */
+:root {
+	--bg: #0b0c0e;
+	--bg-raised: #121316;
+	--text: #e4e4e7;
+	--text-dim: #a1a1aa;
+	--text-faint: #52525b;
+	--line: #1a1b1e;
+	--accent: #34d399; /* active / ok */
+	--warn: #f59e0b; /* archived / incident */
+	--font-sans: 'Inter Variable', system-ui, -apple-system, sans-serif;
+	--font-mono: 'JetBrains Mono Variable', ui-monospace, 'SF Mono', monospace;
+	--space: 1rem;
+	--measure: 42rem;
+}
+
+/* ---- base ---- */
+* { box-sizing: border-box; }
+html { color-scheme: dark; }
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--text);
+	font-family: var(--font-sans);
+	font-size: 15px;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+a:hover { color: #fff; }
+h1, h2, h3 { font-weight: 600; line-height: 1.25; }
+
+/* ---- metadata (mono) ---- */
+.meta {
+	font-family: var(--font-mono);
+	font-size: 0.72rem;
+	color: var(--text-faint);
+	letter-spacing: 0.01em;
+}
+
+/* ---- list rows ---- */
+.rows { list-style: none; margin: 0; padding: 0; }
+.rows li { border-bottom: 1px solid var(--line); }
+.row {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 0.65rem 0;
+}
+
+/* ---- staggered rise-in (CSS only; works on zero-JS pages) ---- */
+@keyframes rise {
+	from { opacity: 0; transform: translateY(6px); }
+	to { opacity: 1; transform: none; }
+}
+.rise { animation: rise 0.35s ease both; animation-delay: calc(var(--i, 0) * 40ms); }
+
+/* ---- status dot ---- */
+@keyframes pulse {
+	0%, 100% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.45); }
+	50% { box-shadow: 0 0 0 4px rgba(52, 211, 153, 0); }
+}
+
+/* ---- prose (mdsvex output) ---- */
+.prose { max-width: var(--measure); }
+.prose h1, .prose h2, .prose h3 { margin-top: 2em; }
+.prose img { max-width: 100%; height: auto; border: 1px solid var(--line); }
+.prose blockquote {
+	margin: 1.25em 0;
+	padding: 0.25em 1em;
+	border-left: 2px solid var(--text-faint);
+	color: var(--text-dim);
+}
+.prose code {
+	font-family: var(--font-mono);
+	font-size: 0.85em;
+	background: var(--bg-raised);
+	padding: 0.1em 0.35em;
+	border-radius: 3px;
+}
+.prose pre {
+	background: var(--bg-raised);
+	border: 1px solid var(--line);
+	padding: 1em;
+	overflow-x: auto;
+	font-size: 0.8rem;
+}
+.prose pre code { background: none; padding: 0; }
+
+/* ---- prism tokens (quiet ops palette) ---- */
+.token.comment, .token.prolog, .token.cdata { color: var(--text-faint); }
+.token.keyword, .token.atrule, .token.important { color: #93c5fd; }
+.token.string, .token.char, .token.attr-value { color: var(--accent); }
+.token.function, .token.class-name { color: #fbbf24; }
+.token.number, .token.boolean, .token.constant { color: #f0abfc; }
+.token.operator, .token.punctuation { color: var(--text-dim); }
+.token.property, .token.tag, .token.symbol, .token.selector { color: #7dd3fc; }
+
+/* ---- view transitions (cross-document works on zero-JS pages) ---- */
+@view-transition { navigation: auto; }
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: 0.18s; }
+
+/* ---- reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+	.rise { animation: none; }
+	::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+	* { animation-duration: 0.001s !important; }
+}
