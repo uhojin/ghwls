@@ -27,8 +27,8 @@
 		<p class="desc">{meta.description}</p>
 		<p class="meta links">
 			{#if meta.techStack?.length}<span>[{meta.techStack.join(', ').toLowerCase()}]</span>{/if}
-			{#if meta.githubUrl}<a href={meta.githubUrl}>source ↗</a>{/if}
-			{#if meta.liveUrl}<a href={meta.liveUrl}>live ↗</a>{/if}
+			{#if meta.githubUrl}<a href={meta.githubUrl} target="_blank" rel="noopener noreferrer">source ↗</a>{/if}
+			{#if meta.liveUrl}<a href={meta.liveUrl} target="_blank" rel="noopener noreferrer">live ↗</a>{/if}
 			{#if meta.postUrl}<a href={meta.postUrl}>writeup →</a>{/if}
 		</p>
 	</header>
@@ -49,7 +49,7 @@
 		</section>
 	{/each}
 
-	<div class="prose">
+	<div class="prose rise" style="--i: {sections.length + 2}">
 		<Content />
 	</div>
 </article>
