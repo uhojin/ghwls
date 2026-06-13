@@ -9,7 +9,7 @@ tags: [Svelte, Rust, Cloudflare]
 Literally. Why would anyone make this? or why would anyone want something like this? for educational purposes, obviously...
 
 I made [lofi-atc.ghwls.com](https://lofi-atc.ghwls.com) because the original [lofiatc.com](https://lofiatc.com) is no longer functioning. Plus the alternatives didn't give me that "comfy" feeling.
-![Mixer Preview Image](/images/writing/lofi-atc/main.png)
+![Mixer preview](/images/writing/lofi-atc/main.png)
 
 Naturally, I searched around for an alternative, but I figured I could just make one for a quick side project. For that reason, rust was chosen and svelte for front. I don't have a need to have different views or pages, which made svelte perfect candidate, and personally, writing react components gives me that mobile app development feeling, which I'm not particularly a big fan of.
 
@@ -32,7 +32,7 @@ So the options were down to **Rust vs. Go**, and after thinking about potentiall
 
 Since I wanted to self-host, and went the simplest route of serving the pre-built static site from the rust backend. I exposed that server port via cloudflare tunnel and made the front end accessible from the internet.
 
-![Image of over simplified architecture](/images/writing/lofi-atc/arch.png)
+![Oversimplified architecture diagram](/images/writing/lofi-atc/arch.png)
 
 The rust server starts FFmpeg process that plays audio to the audio engine. The youtube connection happens via yt-dlp command, and [LiveATC.net](https://liveatc.net) provides the Air Traffic Control audio stream via their website.
 
@@ -42,7 +42,7 @@ Proxies are created by a request sent to the backend's endpoint, which returns a
 I love using [Svelte](https://svelte.dev) whenever I can, which is rarely unless I'm working on a hobby project, but I've yet to try SvelteKit, so I can't say much about that side of Svelte. Nonetheless the experience feels much direct compared to classic seperate file based web development experience. I like that I can edit the style and add the functionality within the same file, less context switching in my head, maybe that will matter less with the vibe-coding era, but we'll see where it leads. Regardless for simple pages I really enjoy the experience over existing frontend solutions out there.
 
 The tiny build size also is a bonus, it also allows one to host a nice web page off of a microcontroller dev board, such as an ESP32, which I'll be writing about another time.
-![Image of build size](/images/writing/lofi-atc/svelte-build-size.png)
+![Svelte build size](/images/writing/lofi-atc/svelte-build-size.png)
 
 
 ## Future plans
