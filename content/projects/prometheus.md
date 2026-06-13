@@ -18,7 +18,7 @@ image:
 
 githubUrl: ""
 liveUrl: ""
-postUrl: "https://blog.ghwls.com/posts/prometheus_notes/post/"
+postUrl: "/writing/prometheus-notes"
 
 challenges:
   - "Optimizing performance on older hardware, OS unresponsive after some duration"
