@@ -10,6 +10,6 @@ const git = (...args: string[]) => {
 
 export const buildInfo = {
 	time: new Date().toISOString().slice(0, 16) + 'Z',
-	branch: git('rev-parse', '--abbrev-ref', 'HEAD'),
+	branch: process.env.VERCEL_GIT_COMMIT_REF ?? git('rev-parse', '--abbrev-ref', 'HEAD'),
 	hash: git('rev-parse', '--short', 'HEAD')
 };
