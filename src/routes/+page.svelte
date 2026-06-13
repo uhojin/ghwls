@@ -9,6 +9,8 @@
 	<meta name="description" content="Software engineer — infra, automation, and small delightful things." />
 </svelte:head>
 
+<h1 class="sr-only">Hojin You</h1>
+
 <p class="intro rise">
 	Software engineer. I keep systems boring and side projects interesting.
 </p>
