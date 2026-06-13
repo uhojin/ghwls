@@ -23,10 +23,7 @@ const config = {
 		mdsvex({ extensions: ['.md'], remarkPlugins: [remarkShiftHeadings] })
 	],
 	kit: {
-		adapter: adapter({ fallback: '404.html' }),
-		prerender: {
-			handleHttpError: 'warn'
-		}
+		adapter: adapter({ fallback: '404.html' })
 	}
 };
 
