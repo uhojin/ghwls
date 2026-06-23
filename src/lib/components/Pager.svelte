@@ -32,8 +32,6 @@
 		align-items: baseline;
 		gap: 1rem;
 		margin-top: 3rem;
-		padding-top: 1.5rem;
-		border-top: 1px solid var(--line);
 	}
 	.slot {
 		flex: 1;
