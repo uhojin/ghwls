@@ -1,5 +1,6 @@
 <script lang="ts">
 	import StatusDot from '$lib/components/StatusDot.svelte';
+	import Pager from '$lib/components/Pager.svelte';
 
 	let { data } = $props();
 	const Content = $derived(data.content);
@@ -29,6 +30,8 @@
 			{#if meta.techStack?.length}<span>[{meta.techStack.join(', ').toLowerCase()}]</span>{/if}
 			{#if meta.githubUrl}<a href={meta.githubUrl} target="_blank" rel="noopener noreferrer">source ↗</a>{/if}
 			{#if meta.liveUrl}<a href={meta.liveUrl} target="_blank" rel="noopener noreferrer">live ↗</a>{/if}
+			{#if meta.figmaUrl}<a href={meta.figmaUrl} target="_blank" rel="noopener noreferrer">design ↗</a>{/if}
+			{#if meta.figmaPrototypeUrl}<a href={meta.figmaPrototypeUrl} target="_blank" rel="noopener noreferrer">prototype ↗</a>{/if}
 			{#if meta.postUrl}<a href={meta.postUrl}>writeup →</a>{/if}
 		</p>
 	</header>
@@ -52,12 +55,14 @@
 	<div class="prose rise" style="--i: {sections.length + 2}">
 		<Content />
 	</div>
+
+	<Pager prev={data.prev} next={data.next} indexHref="/projects" indexLabel="all projects" />
 </article>
 
 <style>
 	header { margin: 2.5rem 0 2rem; }
 	header .meta a:hover { color: var(--text); }
-	h1 { font-size: 1.6rem; margin: 0.5rem 0 0.25rem; }
+	h1 { font-size: 1.6rem; margin: 0.5rem 0 0.25rem; display: flex; align-items: center; }
 	.desc { color: var(--text-dim); margin: 0 0 0.75rem; }
 	.links { display: flex; gap: 1rem; flex-wrap: wrap; }
 	.links a:hover { color: var(--text); }

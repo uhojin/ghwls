@@ -79,7 +79,24 @@ h1, h2, h3 { font-weight: 600; line-height: 1.25; }
 /* ---- prose (mdsvex output) ---- */
 .prose { max-width: var(--measure); }
 .prose h1, .prose h2, .prose h3 { margin-top: 2em; }
-.prose img { max-width: 100%; height: auto; border: 1px solid var(--line); }
+.prose img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 1.5rem auto;
+	border: 1px solid var(--line);
+}
+/* in-content links: underlined so they read as clickable, accent on hover */
+.prose a {
+	text-decoration: underline;
+	text-decoration-color: var(--text-faint);
+	text-underline-offset: 0.15em;
+	transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+.prose a:hover {
+	color: var(--accent);
+	text-decoration-color: var(--accent);
+}
 .prose blockquote {
 	margin: 1.25em 0;
 	padding: 0.25em 1em;

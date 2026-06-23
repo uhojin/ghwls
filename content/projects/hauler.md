@@ -35,8 +35,8 @@ learnings:
   - "Azure deployment and cloud service configuration"
   - "Working across a monorepo with separate frontend, mobile, and backend codebases"
 futurePlans: []
-figmaEmbed: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="650" src="https://embed.figma.com/design/uLWp75BBp2tZI9H3H0niun/Hauler-UI?node-id=0-1&embed-host=share" allowfullscreen></iframe>'
-figmaPrototype: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="650" src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/uLWp75BBp2tZI9H3H0niun/Hauler-UI?node-id=0-1&t=heJCZhvWgjLILUWl-1" allowfullscreen></iframe>'
+figmaUrl: "https://www.figma.com/design/uLWp75BBp2tZI9H3H0niun/Hauler-UI?node-id=0-1"
+figmaPrototypeUrl: "https://www.figma.com/proto/uLWp75BBp2tZI9H3H0niun/Hauler-UI?node-id=0-1"
 images: []
 ---
 

@@ -21,6 +21,8 @@ export interface ProjectMeta {
 	githubUrl?: string;
 	liveUrl?: string;
 	postUrl?: string;
+	figmaUrl?: string;
+	figmaPrototypeUrl?: string;
 	challenges?: string[];
 	solutions?: string[];
 	technicalDetails?: string;

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Pager from '$lib/components/Pager.svelte';
+
 	let { data } = $props();
 	const Content = $derived(data.content);
 </script>
@@ -29,6 +31,8 @@
 	<div class="prose rise" style="--i: 2">
 		<Content />
 	</div>
+
+	<Pager prev={data.prev} next={data.next} indexHref="/writing" indexLabel="all writing" />
 </article>
 
 <style>
@@ -46,5 +50,4 @@
 		color: var(--text-dim);
 		margin: 0;
 	}
-	
 </style>
