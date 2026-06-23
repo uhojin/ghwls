@@ -1,0 +1,24 @@
+# Cloudflare Pages redirects. Format: <source> <destination> <status>
+# Rules are matched top-to-bottom, first match wins (specific before catch-all).
+# _redirects applies to every domain attached to the Pages project; the /posts
+# rules only matter on blog.ghwls.com (the main site has no /posts paths).
+
+# Legacy Fuwari blog URLs (active once blog.ghwls.com is attached to this project)
+/posts/tik_rolling          https://ghwls.com/writing/tik-rolling           301
+/posts/ssh_incident_report  https://ghwls.com/writing/ssh-incident-report   301
+/posts/lofi_atc             https://ghwls.com/writing/lofi-atc              301
+/posts/aeron_repair         https://ghwls.com/writing/aeron-repair          301
+/posts/prometheus_notes     https://ghwls.com/writing/prometheus-notes      301
+/posts/mercury              https://ghwls.com/writing/mercury               301
+/posts/i3blocks-aqi-module  https://ghwls.com/writing/i3blocks-aqi-module   301
+/posts/desktop-migration    https://ghwls.com/writing/desktop-migration     301
+/posts/*                    https://ghwls.com/writing                       301
+
+# Legacy numeric project URLs (6 was pain-tracker, now Praiser)
+/projects/1  /projects/junkmatch         301
+/projects/2  /projects/peruser           301
+/projects/3  /projects/router            301
+/projects/4  /projects/hauler            301
+/projects/5  /projects/prometheus        301
+/projects/6  /projects/praiser           301
+/projects/7  /projects/personal-website  301
