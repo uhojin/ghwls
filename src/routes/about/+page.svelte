@@ -12,7 +12,7 @@
 <p class="bio rise">
 	Software engineer based in Canada. I like infrastructure, automation, and building
 	small tools that do one thing well.
-	<a class="meta resume" href="/resume.pdf">resume.pdf ↓</a>
+	<a class="meta resume" href="/resume.pdf">resume.pdf →</a>
 </p>
 
 <section>

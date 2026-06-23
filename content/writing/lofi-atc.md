@@ -9,6 +9,7 @@ tags: [Svelte, Rust, Cloudflare]
 Literally. Why would anyone make this? or why would anyone want something like this? for educational purposes, obviously...
 
 I made [lofi-atc.ghwls.com](https://lofi-atc.ghwls.com) because the original [lofiatc.com](https://lofiatc.com) is no longer functioning. Plus the alternatives didn't give me that "comfy" feeling.
+
 ![Mixer preview](/images/writing/lofi-atc/main.png)
 
 Naturally, I searched around for an alternative, but I figured I could just make one for a quick side project. For that reason, rust was chosen and svelte for front. I don't have a need to have different views or pages, which made svelte perfect candidate, and personally, writing react components gives me that mobile app development feeling, which I'm not particularly a big fan of.
@@ -17,8 +18,11 @@ Naturally, I searched around for an alternative, but I figured I could just make
 Because pictures are better than words, and I really don't think anyone will be reading nor clicking on my link...
 
 ![Music selection menu](/images/writing/lofi-atc/music-selection.png)
+
 The selection menu is pretty self explanatory, only design challenge I had for this was deciding what to do for stations with multiple broadcasts such as YYZ, and making them paged like below seemed like the most obvious solution.
+
 ![Station selection menu](/images/writing/lofi-atc/station-selection.png)
+
 **Remaining challenges** for Station Picker:
 - Show station status without spamming their servers
 - Automate top stations, also without spamming
@@ -42,8 +46,8 @@ Proxies are created by a request sent to the backend's endpoint, which returns a
 I love using [Svelte](https://svelte.dev) whenever I can, which is rarely unless I'm working on a hobby project, but I've yet to try SvelteKit, so I can't say much about that side of Svelte. Nonetheless the experience feels much direct compared to classic seperate file based web development experience. I like that I can edit the style and add the functionality within the same file, less context switching in my head, maybe that will matter less with the vibe-coding era, but we'll see where it leads. Regardless for simple pages I really enjoy the experience over existing frontend solutions out there.
 
 The tiny build size also is a bonus, it also allows one to host a nice web page off of a microcontroller dev board, such as an ESP32, which I'll be writing about another time.
-![Svelte build size](/images/writing/lofi-atc/svelte-build-size.png)
 
+![Svelte build size](/images/writing/lofi-atc/svelte-build-size.png)
 
 ## Future plans
 I do want to improve the music source/providers to include custom playlists from YouTube or even Spotify.

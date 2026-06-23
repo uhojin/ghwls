@@ -29,7 +29,7 @@
 		content: '';
 		position: absolute;
 		left: -3.5px;
-		top: 0.5rem;
+		top: 1.2rem;
 		width: 6px;
 		height: 6px;
 		border-radius: 50%;
