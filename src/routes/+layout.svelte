@@ -34,5 +34,5 @@
 		flex-direction: column;
 		min-height: 100dvh;
 	}
-	main { flex: 1; }
+	main { flex: 1; display: flex; flex-direction: column; }
 </style>

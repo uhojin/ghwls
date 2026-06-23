@@ -60,6 +60,7 @@
 </article>
 
 <style>
+	article { flex: 1; display: flex; flex-direction: column; }
 	header { margin: 2.5rem 0 2rem; }
 	header .meta a:hover { color: var(--text); }
 	h1 { font-size: 1.6rem; margin: 0.5rem 0 0.25rem; display: flex; align-items: center; }

@@ -31,7 +31,10 @@
 		display: flex;
 		align-items: baseline;
 		gap: 1rem;
-		margin-top: 3rem;
+		/* auto pushes the pager to the bottom of <main> on short pages; padding
+		   keeps a consistent gap above it (auto collapses to 0 on tall pages). */
+		margin-top: auto;
+		padding-top: 3rem;
 	}
 	.slot {
 		flex: 1;

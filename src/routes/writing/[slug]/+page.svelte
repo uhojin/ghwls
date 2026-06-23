@@ -36,6 +36,11 @@
 </article>
 
 <style>
+	article {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+	}
 	header {
 		margin: 2.5rem 0 2rem;
 	}
