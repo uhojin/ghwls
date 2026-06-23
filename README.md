@@ -19,4 +19,5 @@ npm run check      # svelte-check
 npm test           # vitest (pure helpers)
 ```
 
-Deployed to Vercel via `@sveltejs/adapter-static`; redirects in `vercel.json`.
+Deployed to Cloudflare Pages via `@sveltejs/adapter-static`; redirects in
+`static/_redirects`. The old portfolio lives on at `v1.ghwls.com`.
