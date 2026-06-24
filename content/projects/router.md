@@ -1,6 +1,6 @@
 ---
 name: "Router"
-description: "A group destination planner for iOS."
+description: "Group destination planner for iOS."
 status: "Archived"
 techStack: ["Swift", "MapKit", "Firebase"]
 featured: false
@@ -19,6 +19,8 @@ image:
 githubUrl: "https://github.com/uhojin/Router"
 liveUrl: ""
 postUrl: ""
+videoUrl: "https://www.youtube.com/embed/avsTq-2EsJs"
+videoPortrait: true
 
 challenges:
   - "Building an intuitive map-based location picker that feels native"

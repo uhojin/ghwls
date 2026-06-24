@@ -1,6 +1,6 @@
 ---
 name: "JunkMatch"
-description: "A student marketplace app with a dating app-inspired UI."
+description: "Student marketplace app with a dating app-inspired UI."
 status: "Archived"
 techStack: ["Flutter", "Firebase"]
 featured: false
@@ -20,6 +20,8 @@ githubUrl: ""
 liveUrl: ""
 postUrl: ""
 videoUrl: "https://www.youtube.com/embed/trvhSJu54ik"
+
+
 
 challenges:
   - "Designing a UI targeted for college students and easy product preview"

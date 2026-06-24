@@ -23,6 +23,8 @@ export interface ProjectMeta {
 	postUrl?: string;
 	figmaUrl?: string;
 	figmaPrototypeUrl?: string;
+	videoUrl?: string;
+	videoPortrait?: boolean;
 	challenges?: string[];
 	solutions?: string[];
 	technicalDetails?: string;

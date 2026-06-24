@@ -14,6 +14,9 @@
 			{ label: 'future', items: meta.futurePlans }
 		].filter((s) => s.items?.length)
 	);
+
+	// the video (when present) takes the first rise slot; everything below shifts down one
+	const base = $derived(meta.videoUrl ? 1 : 0);
 </script>
 
 <svelte:head>
@@ -36,15 +39,27 @@
 		</p>
 	</header>
 
+	{#if meta.videoUrl}
+		<div class="video rise" class:portrait={meta.videoPortrait} style="--i: 1">
+			<iframe
+				src={meta.videoUrl}
+				title="{meta.name} demo"
+				loading="lazy"
+				allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			></iframe>
+		</div>
+	{/if}
+
 	{#if meta.technicalDetails}
-		<section class="rise" style="--i: 1">
+		<section class="rise" style="--i: {base + 1}">
 			<h2 class="meta">overview</h2>
 			<p>{meta.technicalDetails}</p>
 		</section>
 	{/if}
 
 	{#each sections as section, i}
-		<section class="rise" style="--i: {i + 2}">
+		<section class="rise" style="--i: {base + i + 2}">
 			<h2 class="meta">{section.label}</h2>
 			<ul>
 				{#each section.items ?? [] as item}<li>{item}</li>{/each}
@@ -52,7 +67,7 @@
 		</section>
 	{/each}
 
-	<div class="prose rise" style="--i: {sections.length + 2}">
+	<div class="prose rise" style="--i: {base + sections.length + 2}">
 		<Content />
 	</div>
 
@@ -65,6 +80,9 @@
 	header .meta a:hover { color: var(--text); }
 	h1 { font-size: 1.6rem; margin: 0.5rem 0 0.25rem; display: flex; align-items: center; }
 	.desc { color: var(--text-dim); margin: 0 0 0.75rem; }
+	.video { margin-bottom: 2rem; max-width: var(--measure); aspect-ratio: 16 / 9; }
+	.video.portrait { aspect-ratio: 9 / 16; max-width: 22rem; margin-inline: auto; }
+	.video iframe { display: block; width: 100%; height: 100%; border: 1px solid var(--line); }
 	.links { display: flex; gap: 1rem; flex-wrap: wrap; }
 	.links a:hover { color: var(--text); }
 	section { margin-bottom: 2rem; max-width: var(--measure); }
