@@ -5,6 +5,8 @@ date: "2026-01-13"
 tags: [Svelte, Rust, Cloudflare]
 ---
 
+![Lofi ATC Radio](/images/writing/lofi-atc/playing.png)
+
 # Why?
 Literally. Why would anyone make this? or why would anyone want something like this? for educational purposes, obviously...
 

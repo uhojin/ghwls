@@ -19,14 +19,15 @@ Used the latest Arch ISO, booted into the live environment, and started followin
 `# echo 3 > /sys/class/graphics/fbcon/rotate_all` to rotate clockwise, if using a monitor vertically.
 
 ### Disk Partition
+> ["Savage Installation"](https://www.youtube.com/watch?v=4PBqpX0_UOc)
+
 `# fdisk /dev/sda` because I know my SATA ports and order them everytime I install new storage :)
 
 docker uses `/var` which requires more maintenance if on a separate partition.
-- 1G EFI `/dev/sda1 -> "/boot"` Just in case of wanting to distro hop.
+- 1G EFI `/dev/sda1 -> "/boot"` Just in case.
 - 4G Swap `/dev/sda2`
 - 920G root `/dev/sda3 -> "/"`
 
-> "Savage Installation"
 
 > **TIP**
 >

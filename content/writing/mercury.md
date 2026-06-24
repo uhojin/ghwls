@@ -7,7 +7,8 @@ tags: [macOS, Swift, SMCKit]
 
 > **Work in progress** — this post is unfinished.
 
-> Cover image source: [Mercury (Hermes). Wood engraving by Jonnard after W.B. Richmond, 1866.](https://commons.wikimedia.org/wiki/File:Mercury_(Hermes)._Wood_engraving_by_Jonnard_after_W.B._Richm_Wellcome_V0035817.jpg)
+![Mercury](/images/writing/mercury/cover.png)
+>[Mercury (Hermes). Wood engraving by Jonnard after W.B. Richmond, 1866.](https://commons.wikimedia.org/wiki/File:Mercury_(Hermes)._Wood_engraving_by_Jonnard_after_W.B._Richm_Wellcome_V0035817.jpg)
 
 # A Trillion Dollar Company, BTW...
 Since Apple doesn't provide an easy way to keep an eye on your hardware's health, "power users" often resort to community made solutions. Some popular choices being [stats](https://github.com/exelban/stats), [Hot](https://github.com/macmade/Hot), or the classic [coconutBattery](https://www.coconut-flavour.com/coconutbattery/). Apple does allow ways to track these metrics, but using `powermetrics` or creating a script or an alias isn't accessible for the most part, especially not the best user experience when I just want to know how hot my machine is at this moment.

@@ -17,7 +17,7 @@ image:
   coverPosition: "bottom 10% left 0px"
 
 githubUrl: ""
-liveUrl: "https://www.ghwls.com"
+liveUrl: "https://v1.ghwls.com"
 postUrl: ""
 
 challenges:

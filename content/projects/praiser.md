@@ -1,6 +1,6 @@
 ---
 name: "Praiser"
-description: "An iOS and web platform for logging and visualizing chronic pain."
+description: "iOS and web platform for logging and visualizing chronic pain."
 status: "Active"
 techStack: ["Swift", "Next.js", "Express", "Supabase", "SceneKit", "Three.js", "Cloudflare"]
 featured: true

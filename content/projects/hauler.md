@@ -1,6 +1,6 @@
 ---
 name: "Hauler"
-description: "A job platform connecting truckers with brokers."
+description: "Job platform connecting truckers with brokers."
 status: "Archived"
 techStack: ["Swift", "React", ".NET", "Azure", "Entity Framework"]
 featured: false

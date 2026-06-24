@@ -1,6 +1,6 @@
 ---
 name: "Mercury"
-description: "A tiny macOS menu bar temperature monitor built with SwiftUI and IOKit."
+description: "Tiny macOS menu bar temperature monitor built with SwiftUI and IOKit."
 status: "Active"
 techStack: ["Swift", "SwiftUI", "IOKit", "Homebrew"]
 featured: false
@@ -18,7 +18,7 @@ image:
 
 githubUrl: "https://github.com/uhojin/mercury"
 liveUrl: ""
-postUrl: ""
+postUrl: "/writing/mercury"
 
 challenges:
   - "Reading SMC sensor data directly from macOS kernel"

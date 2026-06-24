@@ -1,6 +1,6 @@
 ---
 name: "Lofi ATC"
-description: "A web app that mixes lofi beats with live air traffic control radio."
+description: "Web app that mixes lofi beats with live air traffic control radio."
 status: "Active"
 techStack: ["Svelte", "Rust", "Axum", "FFmpeg", "yt-dlp", "Cloudflare"]
 featured: false
@@ -18,7 +18,7 @@ image:
 
 githubUrl: "https://github.com/uhojin/lofi-atc"
 liveUrl: "https://lofi-atc.ghwls.com"
-postUrl: ""
+postUrl: "/writing/lofi-atc"
 
 challenges:
   - "Handling CORS for cross-origin audio streams from LiveATC and YouTube"

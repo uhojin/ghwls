@@ -33,6 +33,7 @@ After getting told these things I was still determined to buy it.
 3. Tilt control wasn't actually broken, I just had to put the wire back into the proper slot.
 4. After opening up the left arm, discovered that a piece of plastic was broken. I found a replacement, but decided I wasn't going to buy it since it didn't affect the functionality that much.
 5. There's a foam that goes between the mesh and the seat frame. It was compressed due to the age of the chair, so I got a new one for about $20, which resulted in a taut seat mesh.
+
 ![Seat foam comparison](/images/writing/aeron-repair/foam.png)
 
 Apart from that, I ordered a set of caster wheels which was recommended by many owners online.

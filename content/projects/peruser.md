@@ -1,6 +1,6 @@
 ---
 name: "Peruser"
-description: "A web-based marketplace with a custom currency system."
+description: "Web-based marketplace with a custom currency system."
 status: "Archived"
 techStack: [".NET", "SQLite", "JavaScript", "Entity Framework"]
 featured: false
