@@ -15,7 +15,7 @@
 		justify-content: space-between;
 		gap: 1rem;
 		padding: 2.5rem 0 2.5rem;
-		margin-top: 1rem;
+		/* margin-top: 1rem; */
 		border-top: 1px solid var(--line);
 	}
 	a:hover { color: var(--text); }
