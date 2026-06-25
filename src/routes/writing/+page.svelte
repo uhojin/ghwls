@@ -26,4 +26,6 @@
 <style>
 	.heading { text-transform: uppercase; letter-spacing: 0.08em; margin: 2.5rem 0 0.25rem; }
 	.tags { margin-left: 0.6rem; }
+	/* footer's top border closes off the full list; avoid a doubled hairline */
+	.rows li:last-child { border-bottom: none; }
 </style>
