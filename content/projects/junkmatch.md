@@ -7,21 +7,10 @@ featured: false
 featuredDescription: ""
 order: 1
 
-image:
-  url: "/images/projects/junkmatch.jpg"
-  alt: "Allegory of Trade by John Theodore Heins, 1743"
-  position: "top left 35%"
-  scale: "220%"
-  hoverPosition: "left 35% bottom 15%"
-  hoverScale: "210%"
-  coverPosition: ""
-
 githubUrl: ""
 liveUrl: ""
 postUrl: ""
 videoUrl: "https://www.youtube.com/embed/trvhSJu54ik"
-
-
 
 challenges:
   - "Designing a UI targeted for college students and easy product preview"
@@ -39,7 +28,6 @@ learnings:
 futurePlans:
   - "Adding community features like reviews and ratings"
   - "Implementing a more robust search and filter system"
-figmaEmbed: ""
-figmaPrototype: ""
+
 images: []
 ---

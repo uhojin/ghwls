@@ -51,6 +51,12 @@
 		</div>
 	{/if}
 
+	{#if meta.image?.url}
+		<div class="rise" style="--i: {base}">
+			<img class="{meta.image.size}" src={meta.image.url} alt={meta.image.alt} />
+		</div>
+	{/if}
+
 	{#if meta.technicalDetails}
 		<section class="rise" style="--i: {base + 1}">
 			<h2 class="meta">overview</h2>
@@ -78,6 +84,11 @@
 	article { flex: 1; display: flex; flex-direction: column; }
 	header { margin: 2.5rem 0 2rem; }
 	header .meta a:hover { color: var(--text); }
+	img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
+	.vertical { display: block; width: auto; height: 100%; max-height: 48rem; border: 1px solid var(--line); margin-inline: auto; }
+	.small { display: block; width: auto; height: 100%; border: 1px solid var(--line); margin-inline: auto; }
+	.medium { display: block; width: 100%; max-width: 30rem; height: auto; border: 1px solid var(--line); margin-inline: auto; }
+	.large { display: block; width: 100%; max-width: 50rem; height: auto; border: 1px solid var(--line); margin-inline: auto; }
 	h1 { font-size: 1.6rem; margin: 0.5rem 0 0.25rem; display: flex; align-items: center; }
 	.desc { color: var(--text-dim); margin: 0 0 0.75rem; }
 	.video { margin-bottom: 2rem; max-width: var(--measure); aspect-ratio: 16 / 9; }

@@ -8,13 +8,9 @@ featuredDescription: ""
 order: 2
 
 image:
-  url: "/images/projects/peruser.jpg"
-  alt: "View of the Piazza Grande in Parma by Boccaccio Giuseppe, 1847"
-  position: "bottom 12% left 30%"
-  scale: "300%"
-  hoverPosition: "bottom 12% left 30%"
-  hoverScale: "130%"
-  coverPosition: ""
+  url: "/images/projects/peruser.png"
+  alt: "Peruser marketplace screenshot"
+
 
 githubUrl: "https://github.com/uhojin/Peruser"
 liveUrl: ""

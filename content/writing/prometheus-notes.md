@@ -4,7 +4,7 @@ description: "Getting chained for sharing forbidden tech is an ancient concept."
 date: "2024-06-16"
 tags: [debian, docker, networking, media server]
 ---
-
+![Prometheus Carrying Fire](/images/writing/prometheus-notes/cover2.jpg)
 > Cover image source: [Jan Cossiers - Prometheus Carrying Fire](https://commons.wikimedia.org/wiki/File:Jan_Cossiers_-_Prometheus_Carrying_Fire.jpg)
 
 # Preamble
@@ -25,7 +25,7 @@ I needed XCode for college, I sure wasn't going to pay full price for a new one,
 
 I found a dead MacBook Pro at work that another tech was using it to get parts off of, which had compatible screen and trackpad, which I received for **free** (I got other free hardware from my ISP summer job, which I'll write about some other time).
 
-Overall, I spent **\$40 CAD** on a new battery, and about **\$100 CAD** on 500GB SSD, which seems like a lot now, but it was a good deal back then.
+Overall, I spent **$40 CAD** on a new battery, and about **$100 CAD** on 500GB SSD, which seems like a lot now, but it was a good deal back then.
 
 The SSD came with an adapter to replace the optical drive, and I made a mistake of not getting a new charger.
 

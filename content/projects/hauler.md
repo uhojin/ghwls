@@ -8,13 +8,9 @@ featuredDescription: "Full-stack Azure-deployed job platform connecting brokers 
 order: 4
 
 image:
-  url: "/images/projects/hauler.jpg"
-  alt: "Mercury and Argus by Diego Velázquez, 1659"
-  position: "top 25% left"
-  scale: "200%"
-  hoverPosition: "top 25% left 10%"
-  hoverScale: "170%"
-  coverPosition: ""
+  url: "/images/projects/hauler.png"
+  alt: "Hauler iOS app screenshot"
+  
 
 githubUrl: "https://github.com/HighwayHackers"
 liveUrl: ""

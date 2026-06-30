@@ -15,6 +15,16 @@ export interface ProjectMeta {
 	name: string;
 	description: string;
 	status: 'Active' | 'Archived';
+	image?: {
+		url: string;
+		alt: string;
+		size?: 'vertical' |'small' | 'medium' | 'large';
+		position?: string;
+		scale?: string;
+		hoverPosition?: string;
+		hoverScale?: string;
+		coverPosition?: string;
+	};
 	techStack?: string[];
 	order?: number;
 	featured?: boolean;

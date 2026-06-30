@@ -1,20 +1,17 @@
 ---
 name: "Mercury"
 description: "Tiny macOS menu bar temperature monitor built with SwiftUI and IOKit."
-status: "Active"
+status: "Archived"
 techStack: ["Swift", "SwiftUI", "IOKit", "Homebrew"]
 featured: false
 featuredDescription: ""
 order: 9
 
 image:
-  url: "/images/projects/mercury.jpg"
+  url: "/images/projects/mercury.png"
   alt: "Mercury temperature monitor"
-  position: "center"
-  scale: "100%"
-  hoverPosition: "center"
-  hoverScale: "100%"
-  coverPosition: "center"
+  size: "small"
+
 
 githubUrl: "https://github.com/uhojin/mercury"
 liveUrl: ""

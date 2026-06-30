@@ -1,20 +1,15 @@
 ---
 name: "Praiser"
 description: "iOS and web platform for logging and visualizing chronic pain."
-status: "Active"
+status: "Archived"
 techStack: ["Swift", "Next.js", "Express", "Supabase", "SceneKit", "Three.js", "Cloudflare"]
 featured: true
 featuredDescription: ""
 order: 7
 
 image:
-  url: "/images/projects/paintracker.jpg"
-  alt: "Souls on the Banks of the Acheron by Adolf Hirémy-Hirschl, 1898"
-  position: "top right 25%"
-  scale: "280%"
-  hoverPosition: "top right 25%"
-  hoverScale: "200%"
-  coverPosition: "top center"
+  url: "/images/projects/praiser.png"
+  alt: "Praiser iOS app screenshot"
 
 githubUrl: ""
 liveUrl: ""
@@ -40,8 +35,7 @@ learnings:
   - "Offline-first patterns with sync queues"
 futurePlans:
   - "Revive as a simplified logging-only app"
-figmaEmbed: ""
-figmaPrototype: ""
+
 images: []
 ---
 

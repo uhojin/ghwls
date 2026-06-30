@@ -1,14 +1,14 @@
 ---
 name: "Personal Website"
 description: "Next.js portfolio project with Tailwind CSS and TypeScript."
-status: "Active"
+status: "Archived"
 techStack: ["Next.js", "Tailwind CSS", "TypeScript"]
 featured: true
 featuredDescription: ""
 order: 6
 
 image:
-  url: "/images/projects/portfolio.jpg"
+  url: "/images/projects/v1-portfolio.png"
   alt: "Gallery of the Louvre by Samuel F. B. Morse, 1831-33"
   position: "bottom 28% left 38%"
   scale: "800%"
@@ -33,9 +33,6 @@ learnings:
   - "GitHub pipeline with Vercel for CI/CD"
   - "SEO optimization using PageSpeed Insights"
   - "responsive web design principles"
-futurePlans:
-  - "MongoDB migration for blog posts and project data"
-  - "Code preview styling for blog posts"
 figmaEmbed: ""
 figmaPrototype: ""
 images: []

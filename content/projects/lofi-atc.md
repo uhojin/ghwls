@@ -1,20 +1,16 @@
 ---
 name: "Lofi ATC"
 description: "Web app that mixes lofi beats with live air traffic control radio."
-status: "Active"
+status: "Archived"
 techStack: ["Svelte", "Rust", "Axum", "FFmpeg", "yt-dlp", "Cloudflare"]
 featured: false
 featuredDescription: ""
 order: 8
 
 image:
-  url: "/images/projects/lofi-atc.jpg"
+  url: "/images/projects/lofi_atc.png"
   alt: "Lofi ATC Radio"
-  position: "center"
-  scale: "100%"
-  hoverPosition: "center"
-  hoverScale: "100%"
-  coverPosition: "center"
+  size: "small"
 
 githubUrl: "https://github.com/uhojin/lofi-atc"
 liveUrl: "https://lofi-atc.ghwls.com"

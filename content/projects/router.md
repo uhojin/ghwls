@@ -7,15 +7,6 @@ featured: false
 featuredDescription: ""
 order: 3
 
-image:
-  url: "/images/projects/router.jpg"
-  alt: "The Fairman Rogers Four-in-Hand by Thomas Eakins, 1879-80"
-  position: "top 40% right 35%"
-  scale: "280%"
-  hoverPosition: "center right 35%"
-  hoverScale: "160%"
-  coverPosition: ""
-
 githubUrl: "https://github.com/uhojin/Router"
 liveUrl: ""
 postUrl: ""
